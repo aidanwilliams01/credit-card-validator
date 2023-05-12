@@ -7,3 +7,7 @@ Expected output: '4204016016604651220'
 Test: It will add each digit together when a doubled digit is a double digit number.
 Code: luhnAlgorithm(4102080860435620)
 Expected output: 4204070760465320
+
+Test: It will sum all digits of the transformed set of numbers.
+Code: luhnAlgorithm(4102080860435620)
+Expected output: 50
