@@ -4,7 +4,11 @@ function luhnAlgorithm(number) {
   let newArray = [];
   for (let index = 0; index < numberArray.length; index++) {
     if (index % 2 != 0) {
-      const element = numberArray[index] * 2;
+      let element = numberArray[index] * 2;
+      element = element.toString();
+      if (element.length === 2) {
+        element = parseInt(element[0]) + parseInt(element[1]);
+      }
       newArray.push(element);
     }
     else {
@@ -12,6 +16,6 @@ function luhnAlgorithm(number) {
       newArray.push(element);
     }
   }
-  const newNumber = newArray.join('');
+  const newNumber = parseInt(newArray.join(''));
   return newNumber;
 }
