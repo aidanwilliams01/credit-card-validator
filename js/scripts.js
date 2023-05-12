@@ -25,5 +25,8 @@ function luhnAlgorithm(number) {
   if (numberSum[numberSum.length - 1] === '0') {
     result = 'valid';
   }
+  else {
+    result = 'invalid';
+  }
   return result;
 }

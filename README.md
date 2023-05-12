@@ -17,5 +17,5 @@ Code: luhnAlgorithm(4102080860435620)
 Expected output: 'valid'
 
 Test: It will return 'invalid' if the sum of the transformed set of numbers does not end in a 0.
-Code: luhnAlgorithm(4102080860435620)
+Code: luhnAlgorithm(4102080880435620)
 Expected output: 'invalid'
