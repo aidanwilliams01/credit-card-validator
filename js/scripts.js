@@ -20,5 +20,10 @@ function luhnAlgorithm(number) {
   newArray.forEach(function(number) {
     numberSum += parseInt(number);
   });
-  return numberSum;
+  numberSum = numberSum.toString();
+  let result = ''
+  if (numberSum[numberSum.length - 1] === '0') {
+    result = 'valid';
+  }
+  return result;
 }
