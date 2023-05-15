@@ -29,3 +29,9 @@ Expected output: 'valid'
 Test: It will return 'valid' if the card number starts with a 4, 5, or 6.
 Code: checkFirstDigits('4')
 Expected output: 'valid'
+
+Describe: checkLength()
+
+Test: It will return 'valid' if the length of the card number is 16 and checkFirstDigits returns 'Other'.
+Code: checkLength('4102080860435620')
+Expected output: 'valid'

@@ -22,7 +22,7 @@ function luhnAlgorithm(number) {
   });
   numberSum = numberSum.toString();
   let result = ''
-  if (numberSum[numberSum.length - 1] === '0') {
+  if (numberSum[numberSum.length - 1] === '0' && checkFirstDigits(stringNumber) === 'valid') {
     result = 'valid';
   }
   else {
@@ -33,9 +33,18 @@ function luhnAlgorithm(number) {
 
 function checkFirstDigits(number) {
   if (number.slice(0, 2) === '34' | number.slice(0, 2) === '37') {
-    return 'valid';
+    return 'American Express';
   }
   else if (number[0] === '4' | number[0] === '5' | number[0] === '6') {
+    return 'Other';
+  }
+  else {
+    return 'invalid';
+  }
+}
+
+function checkLength(number) {
+  if (number.length === 16 && checkFirstDigits(number) === 'Other') {
     return 'valid';
   }
 }
