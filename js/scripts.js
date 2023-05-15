@@ -30,3 +30,9 @@ function luhnAlgorithm(number) {
   }
   return result;
 }
+
+function checkFirstDigits(number) {
+  if (number.slice(0, 2) === '34' | number.slice(0, 2) === '37') {
+    return 'valid'
+  }
+}

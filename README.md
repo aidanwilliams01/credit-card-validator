@@ -19,3 +19,9 @@ Expected output: 'valid'
 Test: It will return 'invalid' if the sum of the transformed set of numbers does not end in a 0.
 Code: luhnAlgorithm(4102080880435620)
 Expected output: 'invalid'
+
+Describe: checkFirstDigits()
+
+Test: It will return 'valid' if the card number starts with a 34 or 37.
+Code: checkFirstDigits('34')
+Expected output: 'valid'
