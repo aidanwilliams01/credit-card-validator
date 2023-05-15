@@ -25,3 +25,7 @@ Describe: checkFirstDigits()
 Test: It will return 'valid' if the card number starts with a 34 or 37.
 Code: checkFirstDigits('34')
 Expected output: 'valid'
+
+Test: It will return 'valid' if the card number starts with a 4, 5, or 6.
+Code: checkFirstDigits('4')
+Expected output: 'valid'
