@@ -22,7 +22,7 @@ function luhnAlgorithm(number) {
   });
   numberSum = numberSum.toString();
   let result = ''
-  if (numberSum[numberSum.length - 1] === '0' && checkFirstDigits(stringNumber) === 'valid') {
+  if (numberSum[numberSum.length - 1] === '0' && checkLength(stringNumber) === 'valid') {
     result = 'valid';
   }
   else {
