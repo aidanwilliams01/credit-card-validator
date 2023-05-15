@@ -47,4 +47,7 @@ function checkLength(number) {
   if (number.length === 16 && checkFirstDigits(number) === 'Other') {
     return 'valid';
   }
+  else if (number.length === 15 && checkFirstDigits(number) === 'American Express') {
+    return 'valid';
+  }
 }

@@ -35,3 +35,7 @@ Describe: checkLength()
 Test: It will return 'valid' if the length of the card number is 16 and checkFirstDigits returns 'Other'.
 Code: checkLength('4102080860435620')
 Expected output: 'valid'
+
+Test: It will return 'valid' if the length of the card number is 15 and checkFirstDigits returns 'American Express'.
+Code: checkLength('340208086043562')
+Expected output: 'valid'
